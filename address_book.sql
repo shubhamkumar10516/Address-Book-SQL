@@ -36,3 +36,7 @@ SELECT city, firstName FROM address_Book GROUP BY city, firstName ORDER BY first
 ALTER TABLE address_Book ADD name VARCHAR(15) NOT NULL;
 ALTER TABLE address_Book ADD type VARCHAR(10) NOT NULL;
 
+#UC10
+SELECT type, COUNT(*) FROM address_Book GROUP BY type;
+
+
