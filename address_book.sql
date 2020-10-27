@@ -13,3 +13,8 @@ CREATE TABLE address_Book (                                #uc2 creating table
 
 DESCRIBE address_Book;
 
+#uc3 inserting table
+INSERT INTO address_Book (firstName, lastName, address, city, state, zip, phoneNumber, email) VALUES 
+('Shubham', 'Kumar', 'Nutan Nagar', 'Gaya', 'Bihar', 823001, 8454347223, 'shubh.kum@gmail.com'), ('Aditya', 'Kumar', 'New Area', 'Kolkata', 'WB', 711101, 7454347223, 'adi.kum@gmail.com'), ('Vinay', 'Kumar', 'Nutan Nagar', 'Gaya', 'Bihar', 823001, 8454347223, 'Vinay.kum@gmail.com');
+
+
