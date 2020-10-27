@@ -29,3 +29,6 @@ SELECT firstName, lastName FROM address_Book WHERE city = 'Gaya' or state = 'WB'
 #UC7
 SELECT city, state, COUNT(*) FROM address_Book GROUP BY city, state;
 
+#UC8
+SELECT city, firstName FROM address_Book GROUP BY city, firstName ORDER BY firstName; 
+
