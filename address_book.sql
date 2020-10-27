@@ -20,3 +20,6 @@ INSERT INTO address_Book (firstName, lastName, address, city, state, zip, phoneN
 #UC4
 UPDATE address_Book SET phoneNumber = 7764528212 WHERE firstName = 'Aditya';
 
+#UC5
+DELETE FROM address_Book WHERE firstName = 'Vinay';
+
