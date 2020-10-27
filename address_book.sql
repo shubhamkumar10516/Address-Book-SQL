@@ -23,3 +23,6 @@ UPDATE address_Book SET phoneNumber = 7764528212 WHERE firstName = 'Aditya';
 #UC5
 DELETE FROM address_Book WHERE firstName = 'Vinay';
 
+#UC6
+SELECT firstName, lastName FROM address_Book WHERE city = 'Gaya' or state = 'WB'; 
+
