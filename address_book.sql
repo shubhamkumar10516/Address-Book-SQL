@@ -17,4 +17,6 @@ DESCRIBE address_Book;
 INSERT INTO address_Book (firstName, lastName, address, city, state, zip, phoneNumber, email) VALUES 
 ('Shubham', 'Kumar', 'Nutan Nagar', 'Gaya', 'Bihar', 823001, 8454347223, 'shubh.kum@gmail.com'), ('Aditya', 'Kumar', 'New Area', 'Kolkata', 'WB', 711101, 7454347223, 'adi.kum@gmail.com'), ('Vinay', 'Kumar', 'Nutan Nagar', 'Gaya', 'Bihar', 823001, 8454347223, 'Vinay.kum@gmail.com');
 
+#UC4
+UPDATE address_Book SET phoneNumber = 7764528212 WHERE firstName = 'Aditya';
 
