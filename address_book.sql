@@ -39,4 +39,8 @@ ALTER TABLE address_Book ADD type VARCHAR(10) NOT NULL;
 #UC10
 SELECT type, COUNT(*) FROM address_Book GROUP BY type;
 
+#UC11
+
+INSERT INTO address_Book (firstName, lastName, address, city, state, zip, phoneNumber, email, name , type) VALUES ('Shubham', 'Kumar', 'Nutan Nagar', 'Gaya', 'Bihar', 823001, 8454347223, 'shu.km@gmail.com', 'friend', 'add1'), ('Shubham', 'Kumar', 'Nutan Nagar', 'Gaya', 'Bihar', 823001, 8454347223, 'shbh@gmail.com', 'family', 'add2');
+
 
