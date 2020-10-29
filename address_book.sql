@@ -91,12 +91,22 @@ INSERT INTO Type_Contact (email, type) VALUES  ('ram@gmail.com', 'Friend'),
 
 CREATE TABLE Name_Contact (email varchar(30) NOT NULL, name varchar(10));
 
-
 INSERT INTO Name_Contact (email, type) VALUES  ('ram@gmail.com', 'book1'),
                                                            ('raju@gmail.com', 'book2'),
                                                             ('ramesh@gmail.com', 'book3');
 
 
+# redoing all above queries:
+
+SELECT csc.city, csc.state,COUNT(c.email) FROM Contact as c, City_State_Contact as csc WHERE c.email = csc.email GROUP BY csc.city , csc.state;
+
+SELECT  csc.city FROM Contact as c, City_State_Contact as csc WHERE c.email = csc.email GROUP BY csc.city ORDER BY c.first_name;
+
+SELECT c.first_name, c.last_name FROM Contact as c, City_State_Contact as csc WHERE c.email = csc.email and (csc.city = 'Delhi' or csc.state = 'WB'); 
+
+SELECT COUNT(c.email) FROM Contact as c, Type_Contact as tc WHERE c.email = tc.email GROUP BY tc.type; 
+ 
+UPDATE phone_contact SET phoneNumber = 7764528212 WHERE email = (SELECT email FROM Contact wHERE firstName = 'ram');
 
 
 
